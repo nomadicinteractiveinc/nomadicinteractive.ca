@@ -1,5 +1,6 @@
 svg#topographic {
     width: 100vw;
+    height: 100vw;
   }
   svg#topographic path {
     fill: #183e48;
@@ -20,9 +21,21 @@ svg#topographic {
     margin-left: -250px;
     margin-top: -80px;
   }
+
+/* Media query for screens smaller than 768px (typical mobile devices) */
+@media (max-width: 768px) {
+    #logo {
+      width: 60%; /* Adjust the width as needed for smaller screens */
+      top: 30%; /* Adjust the positioning */
+      margin-left: -30%; /* Adjust margin to center horizontally */
+      margin-top: -40px; /* Adjust margin to center vertically */
+    }
+  }
+
   #logo path {
     fill: #f2f2f2;
   }
+
   body {
     background: #35332f;
     overflow: hidden;
